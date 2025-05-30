@@ -1,0 +1,20 @@
+---
+vxlan:
+  topology:
+    vpc_peers:
+      - peer1: netascode-leaf1
+        peer2: netascode-leaf2
+        peer1_peerlink_interfaces:
+          - name: eth1/3
+          - name: eth1/4
+        peer2_peerlink_interfaces:
+          - name: eth1/3
+          - name: eth1/4 
+      - peer1: netascode-leaf3
+        peer2: netascode-leaf4
+        peer1_peerlink_interfaces:
+          - name: eth1/3
+          - name: eth1/4
+        peer2_peerlink_interfaces:
+          - name: eth1/3
+          - name: eth1/4     

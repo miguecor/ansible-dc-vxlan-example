@@ -1,0 +1,52 @@
+---
+vxlan:
+  topology:
+    switches:
+      - name: netascode-spine1
+        serial_number: 90U6Y5RSC0U
+        role: spine
+        management:
+          default_gateway_v4: 10.6.106.1
+          management_ipv4_address: 10.6.106.31
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+      - name: netascode-spine2
+        serial_number: 9QQAEQ4Z9MW
+        role: spine
+        management:
+          default_gateway_v4: 10.6.106.1
+          management_ipv4_address: 10.6.106.32
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+      - name: netascode-leaf1
+        serial_number: 9PVII7XLSVK
+        role: leaf
+        management:
+          default_gateway_v4: 10.6.106.1
+          management_ipv4_address: 10.6.106.21
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+      - name: netascode-leaf2
+        serial_number: 988Z8ZVABMH
+        role: leaf
+        management:
+          default_gateway_v4: 10.6.106.1
+          management_ipv4_address: 10.6.106.22
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+      - name: netascode-leaf3
+        serial_number: 90CQQNS8RM3
+        role: leaf
+        management:
+          default_gateway_v4: 10.6.106.1
+          management_ipv4_address: 10.6.106.23
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+      - name: netascode-leaf4
+        serial_number: 99J8CZUL8R5
+        role: leaf
+        management:
+          default_gateway_v4: 10.6.106.1
+          management_ipv4_address: 10.6.106.24
+        routing_loopback_id: 0
+        vtep_loopback_id: 1

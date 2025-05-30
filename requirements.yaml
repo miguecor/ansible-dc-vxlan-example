@@ -10,5 +10,5 @@ collections:
     version: 7.1.0
   - name: cisco.dcnm
     version: 3.7.0
-  - name: cisco.nac_dc_vxlan
-    version: 0.4.1
+  # - name: cisco.nac_dc_vxlan
+  #   version: 0.4.1

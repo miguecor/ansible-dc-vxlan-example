@@ -1,0 +1,27 @@
+---
+vxlan:
+  fabric:
+    name: miguecor-nac-fabric1
+    type: VXLAN_EVPN
+  global:
+    bgp_asn: "65001"
+    route_reflectors: 2
+    anycast_gateway_mac: 12:34:56:78:90:00
+    dns_servers:
+      - ip_address: 10.31.104.74
+        vrf: management
+      - ip_address: 10.31.104.88
+        vrf: management
+    ntp_servers:
+      - ip_address: 10.31.104.69
+        vrf: management
+      - ip_address: 10.31.104.71
+        vrf: management
+    vpc:
+      peer_link_vlan: 3600
+      peer_keep_alive: management
+      auto_recovery_time: 360
+      delay_restore_time: 150
+      peer_link_port_channel_id: 4096
+      advertise_pip: false
+      advertise_pip_border_only: true

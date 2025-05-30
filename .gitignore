@@ -132,3 +132,7 @@ dmypy.json
 .vscode/
 
 collections/
+
+# Ansible
+ansible.cfg
+.ansible/
